@@ -1,16 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+*{
+  background-color: skyblue;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  
 }
 
 .App-header {
@@ -24,15 +20,86 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.heading{
+  font-size: 5vw;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 600 !important;
+  padding: 1%;
+}
+.form-type , .form-action,.nav-form-action{
+  font-family: 'Bitter', serif;
+  font-size: 2vw;
+  padding: 1%;
+  font-weight: 600;
+}
+.nav-form-action{
+  font-size: 1.8vw;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary{
+  font-size: 1.5vw;
+  font-family: 'Bitter', serif;
+}
+.btn-danger{
+  position: relative;
+  left: 40%;
+}
+
+.container{
+  margin-top: 2vh;
+  display: flex; 
+  justify-content: center;
+}
+.container .row{
+  display: inline-flexbox;
+}
+.input-form label{
+  font-family: 'Bitter', serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: large;
+  color: #01034e;
+}
+.input-form input{
+  border-style: solid;
+  border-radius:10px;
+  border-color: black;
+}
+
+.formName{
+  font-family: 'Bitter', serif;
+  font-variant-caps: all-petite-caps;
+  font-size: 7vw;
+  font-weight: 500;
+}
+
+table .row{
+  width: 90vw;
+  font-size: 1.3vw;
+  font-family: 'Bitter', serif;
+  border: 1px solid rgb(34, 33, 39)
+}
+table col{
+  width: 100%;
+  border: 1px solid;
+  
+}
+
+table{
+  margin-left:5%;
+  padding:30%;
+  margin-top: 5%;
+}
+
+.message{
+  font-size: 2rem;
+  color: rgb(2, 92, 2);
+  font-weight: 600;
+}
+
+#edit, #delete{
+  border: none;
+  float: right;
 }
